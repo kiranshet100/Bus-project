@@ -1,0 +1,117 @@
+/* Ensure this CSS file is in the same directory as your SearchForm.js */
+
+.search-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: url('./bus.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 20px;
+  color: #fff;
+}
+
+.navbar {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  padding-left: 10px;
+}
+
+.navbar .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 18px;
+}
+
+.content {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  margin-top: 100px; /* To make space for the fixed navbar */
+}
+
+.search-form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #ff6b6b;
+}
+
+.search-button {
+  padding: 10px;
+  background-color: #ff6b6b;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #ff4747;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content {
+    padding: 10px;
+    border-radius: 10px;
+    
+  }
+
+  .input-group label {
+    font-size: 12px;
+  }
+
+  .input-group input {
+    font-size: 12px;
+  }
+
+  .search-button {
+    font-size: 14px;
+  }
+}
